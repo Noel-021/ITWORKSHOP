@@ -1,0 +1,434 @@
+
+
+x = 4+5
+print(x)
+
+9
+
+x = 4+5
+print(x)
+
+9
+
+x = 3.5
+print(x, type(x))
+
+3.5 <class 'float'>
+
+print(x + 1)   # Addition
+print(x - 1)   # Subtraction
+print(x * 2)   # Multiplication
+print(x ** 2)  # Exponentiation
+
+4.5
+2.5
+7.0
+12.25
+
+x += 1
+print(x)
+x *= 2
+print(x)
+
+4.5
+9.0
+
+y = 2.5
+print(type(y))
+print(y, y + 1, y * 2, y ** 2)
+
+<class 'float'>
+2.5 3.5 5.0 6.25
+
+t, f = True, False
+print(type(t))
+
+<class 'bool'>
+
+print(t and f) # Logical AND;
+print(t or f)  # Logical OR;
+print(not t)   # Logical NOT;
+print(t != f)  # Logical XOR;
+
+False
+True
+False
+True
+
+hello = 'hello'   # String literals can use single quotes
+world = "world"   # or double quotes; it does not matter
+print(hello, len(hello))
+
+hello 5
+
+hw = hello + ' : ' + world  # String concatenation
+print(hw)
+
+hello : world
+
+hw12 = 'Placeholder: {} {} {}'.format(hello, world, 12)  # string formatting
+print(hw12)
+
+Placeholder: hello world 12
+
+ 
+
+s = "hello"
+print(s.capitalize())  # Capitalize a string
+print(s.upper())       # Convert a string to uppercase; prints "HELLO"
+print(s.rjust(7))      # Right-justify a string, padding with spaces
+print(s.center(7))     # Center a string, padding with spaces
+print(s.replace('l', ''))  # Replace all instances of one substring with another
+print('  world '.strip()) 
+
+Hello
+HELLO
+  hello
+ hello 
+heo
+world
+
+List
+
+print(5)
+
+x = []
+y = [1, 2, 3]
+print(type(x))
+
+<class 'list'>
+
+nums = list(range(5))  
+print(nums[2])
+print(nums[2:4])    # Get a slice from index 2 to 4 (exclusive); prints "[2, 3]"
+print(nums[2:])     # Get a slice from index 2 to the end; prints "[2, 3, 4]"
+print(nums[:2])     # Get a slice from the start to index 2 (exclusive); prints "[0, 1]"
+print(nums[:])      # Get a slice of the whole list; prints ["0, 1, 2, 3, 4]"
+print(nums[:-2])    # Slice indices can be negative; prints ["0, 1, 2, 3]"
+# nums[2:4] = [8, 9] # Assign a new sublist to a slice
+print(nums)
+
+2
+[2, 3]
+[2, 3, 4]
+[0, 1]
+[0, 1, 2, 3, 4]
+[0, 1, 2]
+[0, 1, 2, 3, 4]
+
+x = [4, 10, 3 , 5]
+for i in range(len(x)):
+    print(x[i])
+
+4
+10
+3
+5
+
+for e in x:
+    print(e)
+
+4
+10
+3
+5
+
+animals = ['cat', 'dog', 'monkey', 1, 3.4]
+for animal in animals:
+    print(animal)
+
+cat
+dog
+monkey
+1
+3.4
+
+for e in x:
+    print(e**2)
+
+16
+100
+9
+25
+
+y = [e**2 for e in x if e%2 == 0]
+print(y)
+
+[16, 100]
+
+y = []
+for e in x:
+    if e%2 == 0:
+        y.append(e**2)
+print(y)
+
+[16, 100]
+
+d = {"I":"nenu", "you":"nivu", "we": "manam"}
+
+print(d["we"])
+
+manam
+
+print(d["We"])
+
+----------------------------------------------------
+KeyError           Traceback (most recent call last)
+<ipython-input-48-6c15d386ad12> in <module>
+----> 1 print(d["We"])
+
+KeyError: 'We'
+
+print(d.get("We"))
+
+None
+
+x  = None
+
+a = {1,4,6,8}
+b = {2, 3, 4, 4, 5}
+print(b)
+
+{2, 3, 4, 5}
+
+c = a.union(b)
+print(c)
+
+{1, 2, 3, 4, 5, 6, 8}
+
+t = (1, 2, 3, 4)
+q = [1, 2, 3, 4]
+
+q[2] = 5
+print(q)
+
+[1, 2, 5, 4]
+
+t[2] = 5
+print(t)
+
+----------------------------------------------------
+TypeError          Traceback (most recent call last)
+<ipython-input-58-3e453d8a521a> in <module>
+----> 1 t[2] = 5
+      2 print(t)
+
+TypeError: 'tuple' object does not support item assignment
+
+cl = {
+    ("Id1", "p1") : 17,
+    ("Id2", "p2") : 19
+}
+
+cl[("Id1", "p1")]
+
+17
+
+def sign(x):
+    if x > 0:
+        return 'positive'
+    elif x < 0:
+        return 'negative'
+    else:
+        return 'zero'
+
+for x in [-1, 0, 1]:
+    print(sign(x))
+
+negative
+zero
+positive
+
+    Numpy
+    Matplotlib
+    Pandas
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+x = [1, 2, 3]
+y = [4, 5, 6]
+print(x + y)
+
+[1, 2, 3, 4, 5, 6]
+
+a = np.array(x)
+b = np.array(y)
+print(a + b)
+
+[5 7 9]
+
+print(a.shape)
+
+(3,)
+
+c = np.array([[1,2,3],[4,5,6]])
+print(c.shape)
+
+(2, 3)
+
+print(type(c))
+
+<class 'numpy.ndarray'>
+
+print(c[0])
+
+[1 2 3]
+
+print(c)
+
+[[1 2 3]
+ [4 5 6]]
+
+print(c[1, 1])
+
+5
+
+print(c[1][1])
+
+5
+
+print(c[1, 0:2])
+
+[4 5]
+
+a = np.array([[1,2,3],[4,5,6]])
+b = np.array([[1,2,3],[4,5,6]])
+
+c = a * b
+# c = np.add(a, b)
+
+print(c)
+
+[[ 1  4  9]
+ [16 25 36]]
+
+#Element wise
+#Dot product
+
+a = np.array([[1,2,3],[4,5,6]])
+b = np.array([[1,2],[4,5], [7, 8]])
+
+print(a)
+print(b)
+
+[[1 2 3]
+ [4 5 6]]
+[[1 2]
+ [4 5]
+ [7 8]]
+
+c = np.dot(a, b)
+print(c)
+
+[[30 36]
+ [66 81]]
+
+print(a.T)
+
+[[1 4]
+ [2 5]
+ [3 6]]
+
+a
+
+array([[1, 2, 3],
+       [4, 5, 6]])
+
+print(np.sum(a, axis = 1))
+
+[ 6 15]
+
+#range
+x = np.arange(1, 10, 0.1)
+print(x)
+
+[1.  1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2.  2.1 2.2 2.3 2.4 2.5 2.6 2.7
+ 2.8 2.9 3.  3.1 3.2 3.3 3.4 3.5 3.6 3.7 3.8 3.9 4.  4.1 4.2 4.3 4.4 4.5
+ 4.6 4.7 4.8 4.9 5.  5.1 5.2 5.3 5.4 5.5 5.6 5.7 5.8 5.9 6.  6.1 6.2 6.3
+ 6.4 6.5 6.6 6.7 6.8 6.9 7.  7.1 7.2 7.3 7.4 7.5 7.6 7.7 7.8 7.9 8.  8.1
+ 8.2 8.3 8.4 8.5 8.6 8.7 8.8 8.9 9.  9.1 9.2 9.3 9.4 9.5 9.6 9.7 9.8 9.9]
+
+Data Visualization
+
+import matplotlib.pyplot as plt
+
+students = ["A", "B", "C", "D"]
+age = [18, 20, 18, 19]
+marks = [75, 88, 72, 90]
+sleep = [8, 5, 12, 3]
+
+plt.figure(figsize=(10,10))
+fig = plt.figure()
+plt.plot(sleep, marks, 
+         marker="o", 
+         color="red",
+         linestyle="-",
+         markersize = 12,
+         linewidth=2,
+         markerfacecolor="green",
+         markeredgecolor = "blue"
+         )
+
+plt.xlabel("Sleep")
+plt.ylabel("Marks")
+plt.title("Sleep vs Marks Data")
+plt.axis([0, 14, 50, 100])
+plt.grid(True)
+plt.show()
+fig.savefig("a.png")
+
+<Figure size 720x720 with 0 Axes>
+
+plt.barh(students, marks, color='green')
+plt.xlabel('Marks')
+plt.ylabel('Students')
+plt.grid(True)
+plt.show()
+
+marks_per = {"A":20, "B": 40, "C": 30, "D":10}
+
+plt.pie(x=marks_per.values(), 
+        labels=marks_per.keys(),
+        autopct='%1.1f%%', 
+        explode=[0, 0.1, 0.1, 0.1])
+plt.legend(marks_per.keys())
+plt.show()
+
+marks = np.
+plt.hist()
+
+Scatter Plot / Line Plot
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.arange(0, 10, 0.1)
+# print(x)
+# print(len(x))
+y = np.sin(x)
+z = np.cos(x)
+
+fig = plt.figure()
+
+plt.plot(x, y, color="red")
+
+plt.plot(x, z)
+
+# plt.plot(y, z, color="green")
+
+plt.legend(["Sin/Cos", "Cos", "Sin"])
+
+
+plt.show()
+
+ 
+
+ 
+
+ 
+
+ 
+
+
