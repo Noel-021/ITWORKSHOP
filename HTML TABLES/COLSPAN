@@ -1,0 +1,25 @@
+<html>
+<head>
+<title> HTML </title>
+</head>
+<body>
+<h1 align = "center"> column span  </h1>
+<table border = "2" bgcolor = "#e6c195" align = "center"> 
+<tr>
+<td colspan = "2" bgcolor = "yellow" > this cell spans 2 columns </td>
+<td> Three </td>
+</tr>
+<tr>
+<td> Four </td>
+<td> Five </td>
+<td> Six </td>
+</tr>
+
+<tr>
+<td> Seven </td>
+<td> Eight </td>
+<td> nine </td>
+
+</tr>
+
+

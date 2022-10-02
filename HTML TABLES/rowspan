@@ -1,0 +1,37 @@
+<html>
+<head>
+<title> HTML </title>
+</head>
+<style>
+.bg-container {
+   background-color:"Red";
+
+}
+
+</style>
+<body>
+<div class ="bg-container">
+<h1 align = "center" class = "bg-container"> Row span </h1>
+<table border = "2" bgcolor = "#e6c195" align = "center"> 
+<tr>
+<td> One </td>
+<td> Two </td>
+<td rowspan = "2" bgcolor = "yellow" > This cells span two rows </td>
+</tr>
+<tr>
+<td> Four </td>
+<td> Five </td>
+</tr>
+
+<tr>
+<td> Seven </td>
+<td> Eight </td>
+<td> nine </td>
+</tr
+</table>
+</div>
+</body> 
+</html>
+
+
+

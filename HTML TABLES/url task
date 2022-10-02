@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <div class="bg-container"  align = "center">
+    <h1 > My Social Media Profiles </h1>
+        
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="/home/student/Pictures/surya.png" height = "100px" width = "100px" />
+            </a>
+            <a href="https://www.instagram.com/suryateja._.chintu/" target="_blank">
+                <img src="https://i.ibb.co/k26YXGr/instagram-png-transparent-1.png" height = "100px" width = "100px" />
+            </a>
+            <a> <img src="https://i.ibb.co/cgv7CZM/youtube-logo-hd-8.png" height = "100px" width = "100px" /> </a>
+
+        
+        
+        <div align = "center"  padding = "10px"  cellpadding="10" >
+            <a href="https://twitter.com/suryate74151893?t=NdHpo2sNporeoNqcFyxJCA&s=09" target="_blank">
+                <img src="https://i.ibb.co/Kjqzrhv/twitter-circle-512.webp" height = "100px" width = "100px" />
+            </a>
+
+            <img src="https://i.ibb.co/4mdcMLS/social-circle-google-plus-2-512.webp" height = "100px" width = "100px" />
+            <a href="https://www.linkedin.com/in/suryateja-jennu-6011a8217" target="_blank">
+                <img src="https://i.ibb.co/jGP8V6Q/linkedin-circle-1868976-1583140.webp" height = "100px" width = "100px" >
+            </a>
+        </div>
+       
+        <div align = "center">
+            <img src="https://i.ibb.co/q9tsFJD/social-snapchat-2019-circle-512.webp" height = "100px" width = "100px" />
+            <img src="https://i.ibb.co/vZMDJyX/social-whatsapp-circle-512.webp" height = "100px" width = "100px"/>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/vc0C6k8/145808.png" height = "100px" width = "100px" /> </a>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+
+
